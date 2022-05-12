@@ -1,0 +1,65 @@
+/*Aqui estou importando um fonte direto do google*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+body{
+    font-family: 'Comfortaa', cursive;
+}
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .cor-hex{
+    width: 100%;
+    text-align: center;
+  }
+
+  .cor-hex h1{
+      text-transform: uppercase;
+      font-size: 2rem;
+      animation: colorchange 5s infinite alternate; /*colorchange é a minha keyframe, "5s" é o tempo da animação*/
+
+  }
+  
+  .cor-hex h2{
+        margin-top: 15%;
+        font-size: 2rem;
+  }
+/*aqui estou "configurando" minha animação de mudar de cor da fonte*/
+@keyframes colorchange{
+    0% {
+        color: indigo;
+      }
+      
+      20% {
+        color: blue;
+      }
+      
+      40% {
+        color: green;
+      }
+      
+      60% {
+        color: yellow;
+      }
+      
+      80% {
+        color: orange;
+      }
+      
+      100% {
+        color: red;
+      }
+  }
+
+  @media(max-width:480px){
+      .cor-hex h1{
+          font-size: 1.5rem;
+      }
+      .cor-hex h2{
+          font-size: 1.5rem;
+      }
+  }
